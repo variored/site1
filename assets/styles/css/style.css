@@ -13,6 +13,16 @@ a {
   margin: auto;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (max-width: 780px) {
+  .container {
+    width: 100%;
+  }
+}
 @font-face {
   font-family: "Karla Regular";
   src: url("/assets/fonts/Karla-Regular.eot");
@@ -24,33 +34,44 @@ a {
   height: 50px;
   background-color: #e5eef0;
 }
-#header .container {
+#header #header_container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr minmax(150px, auto);
 }
-#header .container #header_info {
+#header #header_container #header_info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-#header .container .header_info {
+#header #header_container .header_info {
   font-family: "Karla Regular", sans-serif;
   color: #93a1a7;
   text-transform: uppercase;
   padding: 13px 0px;
   font-size: 13px;
 }
-#header .container #header_logo {
+#header #header_container #header_logo {
   padding-top: 18px;
 }
-#header .container #header_mobile {
+#header #header_container #header_mobile {
   font-size: 14px;
 }
-#header .container .info_icons {
+#header #header_container .info_icons {
   margin-right: 10px;
   position: relative;
   transform: translate(0%, 25%);
 }
 
+@media (max-width: 780px) {
+  #header #header_container {
+    grid-template-columns: 1fr;
+  }
+  #header #header_container #header_logo {
+    text-align: center;
+  }
+  #header #header_container #header_info {
+    display: none;
+  }
+}
 #sitesFrame {
   border: 1px solid black;
   height: 100px;

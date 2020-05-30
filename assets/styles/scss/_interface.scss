@@ -1,3 +1,7 @@
+//ADAPTIVE
+$max-for-tablet: 1200px;
+$max-for-mobile: 780px;
+
 //colors
 $light-blue: #e5eef0;
 $light-blue_font: #93a1a7;
@@ -13,4 +17,14 @@ a{
     width: 1170px;
     height: 100%;
     margin: auto;
+}
+@media (max-width: $max-for_tablet){
+    .container{
+        width: 768px;
+    }
+}
+@media (max-width: $max-for_mobile){
+    .container{
+        width: 100%;
+    }
 }

@@ -2,9 +2,9 @@
     height: 50px;
     background-color: $light-blue;
 
-    .container{
+    #header_container{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr minmax(150px, auto);
 
         #header_info{
             display: grid;
@@ -28,13 +28,25 @@
             font-size: 14px;
         }
 
-        #header_email{
-        }
-
         .info_icons{
             margin-right: 10px;
             position: relative;
             transform: translate(0%, 25%);
         }
+    }
+}
+
+@media (max-width: $max-for_mobile){
+    #header{
+        #header_container{
+            grid-template-columns: 1fr;
+
+            #header_logo{
+                text-align: center;
+            }
+            #header_info{
+                display: none;
+            }
+        }   
     }
 }
