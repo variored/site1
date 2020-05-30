@@ -1,4 +1,40 @@
 #header{
     height: 50px;
-    background-color: $light_blue;
+    background-color: $light-blue;
+
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        #header_info{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .header_info{
+            @include karla;
+            color: $light-blue_font;
+            text-transform: uppercase;
+            padding: 13px 0px;
+            font-size: 13px;
+        }
+     
+        #header_logo{
+            padding-top: 20px;
+            
+        }
+
+        #header_mobile{
+            font-size: 14px;
+        }
+
+        #header_email{
+        }
+
+        .info_icons{
+            margin-right: 10px;
+            position: relative;
+            transform: translate(0%, 25%);
+        }
+    }
 }

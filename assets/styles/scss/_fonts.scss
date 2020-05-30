@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Karla Regular';
+    src: url('Karla-Regular.eot');
+    src: url('Karla-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Karla-Regular.woff') format('woff'),
+    url('Karla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin karla{
+    font-family: "Karla Regular", sans-serif;
+}

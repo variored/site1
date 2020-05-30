@@ -9,9 +9,42 @@ body {
   margin: auto;
 }
 
+@font-face {
+  font-family: "Karla Regular";
+  src: url("Karla-Regular.eot");
+  src: url("Karla-Regular.eot?#iefix") format("embedded-opentype"), url("Karla-Regular.woff") format("woff"), url("Karla-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 #header {
   height: 50px;
   background-color: #e5eef0;
+}
+#header .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#header .container #header_info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#header .container .header_info {
+  font-family: "Karla Regular", sans-serif;
+  color: #93a1a7;
+  text-transform: uppercase;
+  padding: 13px 0px;
+  font-size: 13px;
+}
+#header .container #header_logo {
+  padding-top: 20px;
+}
+#header .container #header_mobile {
+  font-size: 14px;
+}
+#header .container .info_icons {
+  margin-right: 10px;
+  position: relative;
+  transform: translate(0%, 25%);
 }
 
 #sitesFrame {
