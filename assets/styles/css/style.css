@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Karla Regular";
+  src: url("/assets/fonts/Karla-Regular.eot");
+  src: url("/assets/fonts/Karla-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Karla-Regular.woff") format("woff"), url("/assets/fonts/Karla-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -13,6 +20,21 @@ a {
   margin: auto;
 }
 
+.nav_blue-button {
+  height: 38px;
+  background-color: #29c2e1;
+  border: 0px transparent;
+  color: white;
+  border-radius: 18px 18px 18px 18px;
+  text-transform: uppercase;
+  font-size: 14, 5px;
+  font-family: "Karla Regular", sans-serif;
+}
+.nav_blue-button:hover {
+  color: #93a1a7;
+  background-color: #4ecfe9;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 768px;
@@ -22,13 +44,6 @@ a {
   .container {
     width: 100%;
   }
-}
-@font-face {
-  font-family: "Karla Regular";
-  src: url("/assets/fonts/Karla-Regular.eot");
-  src: url("/assets/fonts/Karla-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Karla-Regular.woff") format("woff"), url("/assets/fonts/Karla-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 #header {
   height: 50px;
@@ -72,6 +87,37 @@ a {
     display: none;
   }
 }
+#nav {
+  height: 75px;
+  background-color: #fff;
+}
+#nav #nav_container {
+  display: grid;
+  grid-template-columns: 3fr repeat(8, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+#nav #nav_container #nav_logo {
+  background-image: url("../../../../assets/img/icons/nav-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 39px;
+  height: 33px;
+}
+#nav #nav_container .nav_link {
+  text-align: center;
+  font-family: "Karla Regular", sans-serif;
+  text-transform: uppercase;
+  color: #93a1a7;
+  font-size: 14, 5px;
+}
+#nav #nav_container .nav_link:hover {
+  color: #23282f;
+}
+#nav #nav_container .nav_blue-button {
+  color: white;
+}
+
 #sitesFrame {
   border: 1px solid black;
   height: 100px;

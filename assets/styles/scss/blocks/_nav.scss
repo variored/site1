@@ -1,0 +1,37 @@
+#nav{
+    height: 75px;
+    background-color: #fff;
+
+    #nav_container{
+        display: grid;
+        grid-template-columns: 3fr repeat(8, 1fr);
+        align-items: center;
+        justify-content: center;
+
+        #nav_logo{
+            background-image: url("../../../../assets/img/icons/nav-logo.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 39px;
+            height: 33px;
+        }
+
+        .nav_link{
+            text-align: center;
+            @include karla;
+            text-transform: uppercase;
+            color: $light-blue_font;
+            font-size: 14,5px;
+
+            &:hover{
+                color: $light-blue_font_hover;
+            }
+        }
+
+        .nav_blue-button{
+            color: white;
+        }
+
+        
+    }
+}
