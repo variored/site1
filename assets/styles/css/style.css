@@ -5,5 +5,6 @@ body {
 
 #sitesFrame {
   border: 1px solid black;
-  min-height: 100px;
+  height: 100px;
+  overflow: auto;
 }
