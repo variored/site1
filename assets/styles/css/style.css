@@ -3,6 +3,17 @@ body {
   margin: 0px;
 }
 
+.container {
+  width: 1170px;
+  height: 100%;
+  margin: auto;
+}
+
+#header {
+  height: 50px;
+  background-color: #e5eef0;
+}
+
 #sitesFrame {
   border: 1px solid black;
   height: 100px;
