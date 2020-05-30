@@ -3,6 +3,10 @@ body {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 1170px;
   height: 100%;
@@ -36,7 +40,7 @@ body {
   font-size: 13px;
 }
 #header .container #header_logo {
-  padding-top: 20px;
+  padding-top: 18px;
 }
 #header .container #header_mobile {
   font-size: 14px;
