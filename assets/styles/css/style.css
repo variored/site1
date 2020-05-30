@@ -11,8 +11,8 @@ body {
 
 @font-face {
   font-family: "Karla Regular";
-  src: url("Karla-Regular.eot");
-  src: url("Karla-Regular.eot?#iefix") format("embedded-opentype"), url("Karla-Regular.woff") format("woff"), url("Karla-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Karla-Regular.eot");
+  src: url("/assets/fonts/Karla-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Karla-Regular.woff") format("woff"), url("/assets/fonts/Karla-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
