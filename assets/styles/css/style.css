@@ -237,6 +237,29 @@ a {
   background-size: cover;
   transition: 1s;
 }
+#hero #hero_container {
+  position: relative;
+}
+#hero #hero_container #hero_message-frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 670px;
+}
+#hero #hero_container #hero_message-frame .hero_message {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+#hero #hero_container #hero_message-frame #hero_first-line {
+  font-family: "Raleway Extra Bold", sans-serif;
+  font-size: 48px;
+}
+#hero #hero_container #hero_message-frame #hero_second-line {
+  font-family: "Raleway Regular", sans-serif;
+  font-size: 14px;
+}
 
 @media (max-width: 767px) {
   #hero {
