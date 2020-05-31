@@ -35,3 +35,35 @@
         
     }
 }
+@media (max-width: $max-for_tablet){
+    #nav{
+        #nav_container{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+        }
+        #nav_logo{
+            display: none;
+        }
+    }
+}
+@media (max-width: $max-for_mobile){
+    #nav{
+        .nav_container_active{
+            transition: 0.2s;
+            transform: translateY(0%);
+            z-index: 0;
+        }
+        #nav_container{
+            height: auto;
+            display: grid;
+            grid-template-columns: 30%;
+            position: relative;
+            transition: 0.2s;
+            transform: translateY(-150%);
+            z-index: -1;
+        }
+        #nav_logo{
+            display: none;
+        }
+    }
+}
