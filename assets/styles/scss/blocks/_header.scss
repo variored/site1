@@ -6,6 +6,10 @@
         display: grid;
         grid-template-columns: 1fr minmax(150px, auto);
 
+        #header_nav-button{
+            display: none;
+        }
+        
         #header_info{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -39,11 +43,52 @@
 @media (max-width: $max-for_mobile){
     #header{
         #header_container{
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 5fr;
+
+            #header_nav-button{
+                display: block;
+                border-right: 1px solid $light-blue_font;
+                border-left: 1px solid $light-blue_font;
+                opacity: 0.5;
+                width: 70px;
+                margin-left: 20px;
+                position: relative;
+
+                &:hover{
+                    background-color: $light-blue_hover;
+                }
+
+                .nav-button_lines, 
+                .nav-button_lines::before,
+                .nav-button_lines::after{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 2px;
+                    background-color: $light-blue_font_hover;
+                }
+                .nav-button_lines{
+                    width: 40%;
+                }
+                .nav-button_lines::before,
+                .nav-button_lines::after{
+                    width: 100%;
+                }
+                .nav-button_lines::before{
+                    content: "";
+                    transform: translate(-50%, -9px);
+                }
+                .nav-button_lines::after{
+                    content: "";
+                    transform: translate(-50%, 7px);
+                }
+            }
 
             #header_logo{
                 text-align: center;
             }
+
             #header_info{
                 display: none;
             }

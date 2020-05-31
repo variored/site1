@@ -53,6 +53,9 @@ a {
   display: grid;
   grid-template-columns: 1fr minmax(150px, auto);
 }
+#header #header_container #header_nav-button {
+  display: none;
+}
 #header #header_container #header_info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -78,7 +81,44 @@ a {
 
 @media (max-width: 780px) {
   #header #header_container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 5fr;
+  }
+  #header #header_container #header_nav-button {
+    display: block;
+    border-right: 1px solid #93a1a7;
+    border-left: 1px solid #93a1a7;
+    opacity: 0.5;
+    width: 70px;
+    margin-left: 20px;
+    position: relative;
+  }
+  #header #header_container #header_nav-button:hover {
+    background-color: #d5dddf;
+  }
+  #header #header_container #header_nav-button .nav-button_lines,
+#header #header_container #header_nav-button .nav-button_lines::before,
+#header #header_container #header_nav-button .nav-button_lines::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2px;
+    background-color: #23282f;
+  }
+  #header #header_container #header_nav-button .nav-button_lines {
+    width: 40%;
+  }
+  #header #header_container #header_nav-button .nav-button_lines::before,
+#header #header_container #header_nav-button .nav-button_lines::after {
+    width: 100%;
+  }
+  #header #header_container #header_nav-button .nav-button_lines::before {
+    content: "";
+    transform: translate(-50%, -9px);
+  }
+  #header #header_container #header_nav-button .nav-button_lines::after {
+    content: "";
+    transform: translate(-50%, 7px);
   }
   #header #header_container #header_logo {
     text-align: center;
