@@ -1,6 +1,6 @@
 //ADAPTIVE
-$max-for-tablet: 1200px;
-$max-for-mobile: 780px;
+$max-for-tablet: 1023px;
+$max-for-mobile: 767px;
 
 //colors
 $light-blue: #e5eef0;
@@ -21,7 +21,7 @@ a{
 
 //GRID
 .container{
-    width: 1170px;
+    width: 970px;
     height: 100%;
     margin: auto;
 }
@@ -46,7 +46,7 @@ a{
 //MEDIA
 @media (max-width: $max-for_tablet){
     .container{
-        width: 768px;
+        width: 720px;
     }
 }
 @media (max-width: $max-for_mobile){
