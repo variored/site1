@@ -1,6 +1,11 @@
 #header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
     height: 50px;
     background-color: $light-blue;
+    z-index: 2;
 
     #header_container{
         display: grid;
@@ -42,6 +47,8 @@
 
 @media (max-width: $max-for_mobile){
     #header{
+        z-index: 2;
+
         #header_container{
             grid-template-columns: 1fr 5fr;
 
@@ -77,13 +84,28 @@
                 }
                 .nav-button_lines::before{
                     content: "";
-                    transform: translate(-50%, -9px);
+                    transform: translate(-50%, -9px) rotate(0deg);
+                    transition: 0.5s;
                 }
                 .nav-button_lines::after{
                     content: "";
-                    transform: translate(-50%, 7px);
+                    transform: translate(-50%, 7px) rotate(0deg);
+                    transition: 0.5s;
+                }
+                .lines_active{
+                    background-color: transparent;
+                    transition: 0.5s;
+                }
+                .lines_active::before{
+                    transform: translate(-50%, -1px) rotate(45deg);
+                    transition: 0.5s;
+                }
+                .lines_active::after{
+                    transform: translate(-50%, -1px) rotate(-45deg);
+                    transition: 0.5s;
                 }
             }
+            
 
             #header_logo{
                 text-align: center;

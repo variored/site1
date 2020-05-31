@@ -1,4 +1,4 @@
-#nav{
+.nav{
     height: 75px;
     background-color: #fff;
 
@@ -36,7 +36,7 @@
     }
 }
 @media (max-width: $max-for_tablet){
-    #nav{
+    .nav{
         #nav_container{
             display: grid;
             grid-template-columns: repeat(8, 1fr);
@@ -47,23 +47,25 @@
     }
 }
 @media (max-width: $max-for_mobile){
-    #nav{
-        .nav_container_active{
-            transition: 0.2s;
-            transform: translateY(0%);
-            z-index: 0;
-        }
+    
+    .nav{   
+        position: relative;
+        transition: 0.4s;
+        height: auto;
+        transform: translateY(-300%);
+
         #nav_container{
             height: auto;
             display: grid;
             grid-template-columns: 30%;
-            position: relative;
-            transition: 0.2s;
-            transform: translateY(-150%);
-            z-index: -1;
+            row-gap: 15%;
         }
         #nav_logo{
             display: none;
         }
+    }
+    .nav-active{
+        transition: 0.4s;
+        transform: translateY(0%);
     }
 }
