@@ -192,16 +192,19 @@ a {
 }
 @media (max-width: 780px) {
   .nav {
-    position: relative;
+    position: absolute;
     transition: 0.4s;
     height: auto;
+    width: 100%;
     transform: translateY(-300%);
   }
   .nav #nav_container {
     height: auto;
     display: grid;
     grid-template-columns: 30%;
-    row-gap: 15%;
+  }
+  .nav #nav_container > * {
+    margin: 10px 0px;
   }
   .nav #nav_logo {
     display: none;
@@ -210,6 +213,22 @@ a {
   .nav-active {
     transition: 0.4s;
     transform: translateY(0%);
+  }
+}
+#hero {
+  height: 750px;
+  background-image: url("../../../../assets/img/bg/hero-bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+
+@media (max-width: 780px) {
+  #hero {
+    background-position: bottom left;
+    transition: 1s;
+    height: 500px;
   }
 }
 #sitesFrame {

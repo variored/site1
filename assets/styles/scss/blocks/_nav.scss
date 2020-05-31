@@ -47,18 +47,21 @@
     }
 }
 @media (max-width: $max-for_mobile){
-    
-    .nav{   
-        position: relative;
+    .nav{
+        position: absolute;
         transition: 0.4s;
         height: auto;
+        width: 100%;
         transform: translateY(-300%);
 
         #nav_container{
             height: auto;
             display: grid;
             grid-template-columns: 30%;
-            row-gap: 15%;
+
+            >*{
+                margin: 10px 0px;
+            }
         }
         #nav_logo{
             display: none;
