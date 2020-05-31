@@ -7,6 +7,30 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Raleway Extra Bold';
+    src: url('/assets/fonts/Raleway-ExtraBold.eot');
+    src: url('/assets/fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Raleway-ExtraBold.woff') format('woff'),
+    url('/assets/fonts/Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('/assets/fonts/Raleway-Regular.eot');
+    src: url('/assets/fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Raleway-Regular.woff') format('woff'),
+    url('/assets/fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 @mixin karla{
     font-family: "Karla Regular", sans-serif;
+}
+@mixin raleway{
+    font-family: "Raleway Extra Bold", sans-serif;
+}
+@mixin raleway{
+    font-family: "Raleway Regular", sans-serif;
 }
