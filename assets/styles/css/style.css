@@ -19,6 +19,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("/assets/fonts/OpenSans-Regular.eot");
+  src: url("/assets/fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/OpenSans-Regular.woff") format("woff"), url("/assets/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway Medium";
+  src: url("/assets/fonts/Raleway-Medium.eot");
+  src: url("/assets/fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Raleway-Medium.woff") format("woff"), url("/assets/fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -285,4 +299,83 @@ a {
   border: 1px solid black;
   height: 100px;
   overflow: auto;
+}
+
+#make-your-own-landing {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+#make-your-own-landing #make-your-own-landing_container {
+  display: grid;
+  grid-template-columns: 640px 1fr;
+  column-gap: 20px;
+}
+#make-your-own-landing #make-your-own-landing_container .make-your-own-landing_container_columns .make-your-own-landing_message {
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 14px;
+  color: #55595f;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_container_left-column #make-your-own-landing_left-column_message-title {
+  margin-bottom: 40px;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_container_left-column #make-your-own-landing_left-column_message-title #make-your-own-landing_message-title_main {
+  font-family: "Raleway Extra Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #23282f;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_container_left-column #make-your-own-landing_left-column_message-title #make-your-own-landing_message-title_sub {
+  font-family: "Karla Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #23282f;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_container_left-column #make-your-own-landing_container_left-column_image {
+  margin-top: 60px;
+  width: 585px;
+  height: 301px;
+  background-image: url("../../../../assets/img/bg/make-your-own-landing_container_left-column_image_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column .make-your-own-landing_right-column_line {
+  margin-bottom: 55px;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column .make-your-own-landing_right-column_line .make-your-own-landing_line_icon-bg {
+  background-color: #e5eef0;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column .make-your-own-landing_right-column_line .make-your-own-landing_line_icon-bg:hover {
+  background-color: #f7941d;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column .make-your-own-landing_right-column_line .make-your-own-landing_line_icon {
+  margin-right: 30px;
+  width: 67px;
+  height: 67px;
+  float: left;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column .make-your-own-landing_right-column_line #make-your-own-landing_right-column_icon_first {
+  background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_first.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column .make-your-own-landing_right-column_line #make-your-own-landing_right-column_icon_second {
+  background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_second.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column .make-your-own-landing_right-column_line #make-your-own-landing_right-column_icon_third {
+  background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_third.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column .make-your-own-landing_right-column_line .make-your-own-landing_line_message {
+  color: #55595f;
+  overflow: hidden;
+}
+#make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column .make-your-own-landing_right-column_line .make-your-own-landing_line_message .make-your-own-landing_message_title {
+  font-family: "Raleway Medium", sans-serif;
+  font-size: 20px;
+  color: #23282f;
+  margin-bottom: 10px;
 }

@@ -25,6 +25,24 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('/assets/fonts/OpenSans-Regular.eot');
+    src: url('/assets/fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/OpenSans-Regular.woff') format('woff'),
+    url('/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url('/assets/fonts/Raleway-Medium.eot');
+    src: url('/assets/fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Raleway-Medium.woff') format('woff'),
+    url('/assets/fonts/Raleway-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 @mixin karla{
     font-family: "Karla Regular", sans-serif;
 }
@@ -33,4 +51,10 @@
 }
 @mixin raleway-regular{
     font-family: "Raleway Regular", sans-serif;
+}
+@mixin open-sans{
+    font-family: "Open Sans Regular", sans-serif;
+}
+@mixin raleway-medium{
+    font-family: "Raleway Medium", sans-serif;
 }
