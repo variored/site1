@@ -261,11 +261,19 @@ a {
   font-size: 14px;
 }
 
+@media (max-width: 1023px) {
+  #here #hero_container #hero_message-frame {
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   #hero {
     background-position: bottom left;
     transition: 1s;
     height: 500px;
+  }
+  #hero #hero_container #hero_message-frame {
+    width: 100%;
   }
 }
 #sitesFrame {

@@ -35,10 +35,25 @@
     }
 
 }
+@media (max-width: $max-for_tablet){
+    #here{
+        #hero_container{
+            #hero_message-frame{
+                width: 100%;
+            }    
+        }
+    }
+}
 @media (max-width: $max-for_mobile){
     #hero{
         background-position: bottom left;
         transition: 1s;
         height: 500px;
+
+        #hero_container{
+            #hero_message-frame{
+                width: 100%;
+            }    
+        }
     }
 }
