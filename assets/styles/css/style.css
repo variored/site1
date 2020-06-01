@@ -35,7 +35,7 @@ a {
   margin: auto;
 }
 
-.nav_blue-button {
+.blue-button {
   height: 38px;
   background-color: #29c2e1;
   border: 0px transparent;
@@ -45,7 +45,7 @@ a {
   font-size: 14, 5px;
   font-family: "Karla Regular", sans-serif;
 }
-.nav_blue-button:hover {
+.blue-button:hover {
   color: #93a1a7;
   background-color: #4ecfe9;
 }
