@@ -1,6 +1,10 @@
+//CONSTS
+$SPEED_OF_ANIM_NAV: 0.4s;
+
 .nav{
     height: 75px;
     background-color: #fff;
+    z-index: 90;
 
     #nav_container{
         display: grid;
@@ -48,8 +52,8 @@
 }
 @media (max-width: $max-for_mobile){
     .nav{
-        position: absolute;
-        transition: 0.4s;
+        position: fixed;
+        transition: $SPEED_OF_ANIM_NAV;
         height: auto;
         width: 100%;
         transform: translateY(-300%);
@@ -68,7 +72,7 @@
         }
     }
     .nav-active{
-        transition: 0.4s;
+        transition: $SPEED_OF_ANIM_NAV;
         transform: translateY(0%);
     }
 }

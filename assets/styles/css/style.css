@@ -67,7 +67,7 @@ a {
   width: 100%;
   height: 50px;
   background-color: #e5eef0;
-  z-index: 2;
+  z-index: 100;
 }
 #header #header_container {
   display: grid;
@@ -100,9 +100,6 @@ a {
 }
 
 @media (max-width: 767px) {
-  #header {
-    z-index: 2;
-  }
   #header #header_container {
     grid-template-columns: 1fr 5fr;
   }
@@ -167,6 +164,7 @@ a {
 .nav {
   height: 75px;
   background-color: #fff;
+  z-index: 90;
 }
 .nav #nav_container {
   display: grid;
@@ -206,7 +204,7 @@ a {
 }
 @media (max-width: 767px) {
   .nav {
-    position: absolute;
+    position: fixed;
     transition: 0.4s;
     height: auto;
     width: 100%;
