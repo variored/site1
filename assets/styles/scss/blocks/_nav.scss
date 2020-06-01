@@ -3,14 +3,22 @@ $SPEED_OF_ANIM_NAV: 0.4s;
 
 .nav{
     height: 75px;
-    background-color: #fff;
     z-index: 90;
+    background-color: transparent;
+
+    #nav_empty-space{
+        margin: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+    }
 
     #nav_container{
         display: grid;
         grid-template-columns: 3fr repeat(8, 1fr);
         align-items: center;
         justify-content: center;
+        background-color: #fff;
 
         #nav_logo{
             background-image: url("../../../../assets/img/icons/nav-logo.png");

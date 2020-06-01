@@ -163,14 +163,21 @@ a {
 }
 .nav {
   height: 75px;
-  background-color: #fff;
   z-index: 90;
+  background-color: transparent;
+}
+.nav #nav_empty-space {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
 }
 .nav #nav_container {
   display: grid;
   grid-template-columns: 3fr repeat(8, 1fr);
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 .nav #nav_container #nav_logo {
   background-image: url("../../../../assets/img/icons/nav-logo.png");
