@@ -45,6 +45,9 @@
             }
         }
         #make-your-own-landing_right-column{
+            display: grid;
+            grid-template-columns: 1fr;
+
             .make-your-own-landing_right-column_line{
                 margin-bottom: 55px;
 
@@ -70,18 +73,28 @@
                     background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_first.png");
                     background-position: center;
                     background-repeat: no-repeat;
+
+                    &:hover{
+                        background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_first_hover.png");
+                    }
                 }
                 #make-your-own-landing_right-column_icon_second{
                     background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_second.png");
                     background-position: center;
                     background-repeat: no-repeat;
-                    
+
+                    &:hover{
+                        background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_second_hover.png");
+                    }
                 }
                 #make-your-own-landing_right-column_icon_third{
                     background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_third.png");
                     background-position: center;
                     background-repeat: no-repeat;
-                    
+
+                    &:hover{
+                        background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_third_hover.png");
+                    }
                 }
 
                 .make-your-own-landing_line_message{
@@ -99,5 +112,27 @@
             }
         }
 
+    }
+}
+@media (max-width: $max-for-tablet){
+    #make-your-own-landing{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    
+        #make-your-own-landing_container{
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 20px;
+            row-gap: 60px;
+
+            #make-your-own-landing_right-column{
+                display: grid;
+                grid-template-columns: 1fr;
+                
+                .make-your-own-landing_right-column_line{
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 }
