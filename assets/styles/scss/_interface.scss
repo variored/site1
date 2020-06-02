@@ -2,6 +2,9 @@
 $max-for-tablet: 1023px;
 $max-for-mobile: 767px;
 
+//SIZES
+$block-padding: 90px;
+
 //colors
 $light-blue: #e5eef0;
 $light-blue_hover: #d5dddf;
@@ -19,6 +22,22 @@ body{
 }
 a{
     text-decoration: none;
+}
+.triangles-bg{
+    position: absolute;
+    right: 0px;
+    bottom: -$block-padding;
+    background-image: url("../../../assets/img/bg/truangles.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 212px;
+    height: 109px;
+}
+.to-center{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 //GRID
@@ -40,7 +59,6 @@ a{
     }
 
     .grid-block_icon{
-        
         margin-right: 30px;
         width: 67px;
         height: 67px;
@@ -63,6 +81,24 @@ a{
         }
     }
 }
+.block{
+    padding-top: $block-padding;
+    padding-bottom: $block-padding;
+    
+    .block-title{
+        margin-bottom: 60px;
+
+        .block-title_main{
+            @include raleway-extra-bold;
+            font-size: 30px;
+        }
+        .block-title_sub{
+            @include karla;
+            font-size: 18px;
+        }
+    }
+}
+
 
 //BUTTONS
 .blue-button{
