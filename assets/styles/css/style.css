@@ -256,7 +256,7 @@ a {
 }
 .nav #nav_empty-space {
   margin: 0px;
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   background-color: transparent;
 }
