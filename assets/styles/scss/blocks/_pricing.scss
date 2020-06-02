@@ -1,9 +1,58 @@
+//CONSTS
+$SPEED-ANIM-PRICE-FRAME-BOX-SHADOW: 0.3s;
+
 #pricing{
     #pricing_container{
         #pricing_grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 20px;
 
             .pricing_price-frame{
-                border: 1px solid black;
+                border: 1px solid $light-frame;
+                transition: $SPEED-ANIM-PRICE-FRAME-BOX-SHADOW;
+
+                &:hover{
+                    box-shadow: 0 0 10px #e4e9ed;
+                    transition: $SPEED-ANIM-PRICE-FRAME-BOX-SHADOW;
+                }
+
+                >*{
+                    text-align: center;
+                }
+
+                .price-frame_price-scheme{
+                    @include raleway-bold;
+                    text-transform: uppercase;
+                    color: $light-blue_font_hover;
+                    font-size: 20px;
+                    padding-top: 40px;
+                    padding-bottom: 10px;
+                }
+
+                .price-frame_price-count{
+                    @include raleway-medium;
+                    font-size: 18px;
+                    color: $white-gray;
+                    padding: 20px 0px;
+                    border-top: 1px solid $light-frame;
+                    border-bottom: 1px solid $light-frame;
+
+                    .counter{
+                        color: $orange;
+                    }
+                }
+
+                .price-frame_price-description{
+                    padding: 40px 60px;
+                    @include open-sans;
+                    font-size: 15px;
+                    color: $white-gray;
+                }
+
+                .blue-button{
+                    margin-bottom: 40px;
+                }
             }
         }
     }

@@ -33,6 +33,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("/assets/fonts/Raleway-Bold.eot");
+  src: url("/assets/fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Raleway-Bold.woff") format("woff"), url("/assets/fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   padding: 0px;
   margin: 0px;
@@ -505,6 +512,47 @@ a {
     margin-bottom: 20px;
   }
 }
+#pricing #pricing_container #pricing_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
 #pricing #pricing_container #pricing_grid .pricing_price-frame {
-  border: 1px solid black;
+  border: 1px solid #e4e9ed;
+  transition: 0.3s;
+}
+#pricing #pricing_container #pricing_grid .pricing_price-frame:hover {
+  box-shadow: 0 0 10px #e4e9ed;
+  transition: 0.3s;
+}
+#pricing #pricing_container #pricing_grid .pricing_price-frame > * {
+  text-align: center;
+}
+#pricing #pricing_container #pricing_grid .pricing_price-frame .price-frame_price-scheme {
+  font-family: "Raleway Bold", sans-serif;
+  text-transform: uppercase;
+  color: #23282f;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+#pricing #pricing_container #pricing_grid .pricing_price-frame .price-frame_price-count {
+  font-family: "Raleway Medium", sans-serif;
+  font-size: 18px;
+  color: #55595f;
+  padding: 20px 0px;
+  border-top: 1px solid #e4e9ed;
+  border-bottom: 1px solid #e4e9ed;
+}
+#pricing #pricing_container #pricing_grid .pricing_price-frame .price-frame_price-count .counter {
+  color: #f7941d;
+}
+#pricing #pricing_container #pricing_grid .pricing_price-frame .price-frame_price-description {
+  padding: 40px 60px;
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 15px;
+  color: #55595f;
+}
+#pricing #pricing_container #pricing_grid .pricing_price-frame .blue-button {
+  margin-bottom: 40px;
 }

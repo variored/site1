@@ -43,6 +43,15 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('/assets/fonts/Raleway-Bold.eot');
+    src: url('/assets/fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Raleway-Bold.woff') format('woff'),
+    url('/assets/fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 @mixin karla{
     font-family: "Karla Regular", sans-serif;
 }
@@ -57,4 +66,7 @@
 }
 @mixin raleway-medium{
     font-family: "Raleway Medium", sans-serif;
+}
+@mixin raleway-bold{
+    font-family: "Raleway Bold", sans-serif;
 }
