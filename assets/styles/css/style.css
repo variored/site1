@@ -115,10 +115,12 @@ a {
 .block .block-title .block-title_main {
   font-family: "Raleway Extra Bold", sans-serif;
   font-size: 30px;
+  text-transform: uppercase;
 }
 .block .block-title .block-title_sub {
   font-family: "Karla Regular", sans-serif;
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 .blue-button {
@@ -555,4 +557,20 @@ a {
 }
 #pricing #pricing_container #pricing_grid .pricing_price-frame .blue-button {
   margin-bottom: 40px;
+}
+
+@media (max-width: 1023px) {
+  #pricing #pricing_container #pricing_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  #pricing #pricing_container #pricing_grid {
+    display: grid;
+    grid-template-columns: 70%;
+    row-gap: 20px;
+    justify-content: center;
+  }
 }

@@ -92,10 +92,12 @@ a{
         .block-title_main{
             @include raleway-extra-bold;
             font-size: 30px;
+            text-transform: uppercase;
         }
         .block-title_sub{
             @include karla;
             font-size: 18px;
+            text-transform: uppercase;
         }
     }
 }

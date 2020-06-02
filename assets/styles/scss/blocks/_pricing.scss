@@ -57,3 +57,26 @@ $SPEED-ANIM-PRICE-FRAME-BOX-SHADOW: 0.3s;
         }
     }
 }
+@media (max-width: $max-for-tablet){
+    #pricing{
+        #pricing_container{
+            #pricing_grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+    }
+}
+@media (max-width: $max-for-mobile){
+    #pricing{
+        #pricing_container{
+            #pricing_grid{
+                display: grid;
+                grid-template-columns: 70%;
+                row-gap: 20px;
+                justify-content: center;
+            }
+        }
+    }
+}
