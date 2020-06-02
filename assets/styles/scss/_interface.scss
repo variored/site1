@@ -27,6 +27,42 @@ a{
     height: 100%;
     margin: auto;
 }
+//GRID_BLOCKS
+.grid-block{
+    margin-bottom: 55px;
+
+    .grid-block_icon-bg{
+        background-color: $light-blue;
+
+        &:hover{
+            background-color: $orange;
+        }    
+    }
+
+    .grid-block_icon{
+        
+        margin-right: 30px;
+        width: 67px;
+        height: 67px;
+        float: left;
+    }
+    .grid-block_message{
+        color: $white-gray;
+        overflow: hidden;
+
+        .grid-block_message_title{
+            @include raleway-medium;
+            font-size: 20px;
+            color: $light-blue_font_hover;
+            margin-bottom: 10px;
+        }
+        .grid-block_message_sub{
+            @include open-sans;
+            font-size: 14px;
+            color: $white-gray;
+        }
+    }
+}
 
 //BUTTONS
 .blue-button{
