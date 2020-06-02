@@ -489,3 +489,19 @@ a {
 #features #features_container #features_grid .lorem-ico:hover {
   background-image: url("../../../../assets/img/icons/lorem_ico_hover.png");
 }
+
+@media (max-width: 1023px) {
+  #features #features_container #features_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  #features #features_container #features_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #features #features_container #features_grid .grid-block {
+    margin-bottom: 20px;
+  }
+}

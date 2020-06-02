@@ -21,3 +21,27 @@
         }
     }
 }
+@media (max-width: $max-for-tablet){
+    #features{
+        #features_container{
+            #features_grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+@media (max-width: $max-for-mobile){
+    #features{
+        #features_container{
+            #features_grid{
+                display: grid;
+                grid-template-columns: 1fr;
+
+                .grid-block{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
