@@ -131,6 +131,7 @@ a{
 }
 @media (max-width: $max-for_mobile){
     .container{
-        width: 100%;
+        width: 95%;
+        padding: 0 10px;
     }
 }
