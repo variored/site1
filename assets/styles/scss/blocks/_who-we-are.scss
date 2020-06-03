@@ -1,93 +1,63 @@
-#who-we-are_grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 70px;
-    margin-bottom: 100px;
+#who-we-are{
+    padding-bottom: 10px;
 
-    .who-we-are-grid_column{
-        @include open-sans;
-        font-size: 14px;
-        line-height: 24px;
-        text-align: justify;
-    }
-}
-#who-we-are-interesting-frame{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 40px;
-    padding-top: 75px;
-
-    #grid-block-big_ico-1{
-        background-image: url("../../../../assets/img/icons/grid-block-big_ico-1.png");
-    }
-    #grid-block-big_ico-2{
-        background-image: url("../../../../assets/img/icons/grid-block-big_ico-2.png");
-    }
-    #grid-block-big_ico-3{
-        background-image: url("../../../../assets/img/icons/grid-block-big_ico-3.png");
-    }
-    #grid-block-big_ico-4{
-        background-image: url("../../../../assets/img/icons/grid-block-big_ico-4.png");
-        
-    }
-
-    .grid-block-big{
-
-        .grid-block-big_ico{
-            float: left;
-            align-content: middle;
-            width: 40px;
-            height: 40px;
-            margin-right: 27px;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .grid-block-big_message{
-            overflow: hidden;
-
-            .grid-block-big_message_main{
-                @include karla;
-                font-size: 60px;
-                line-height: 40px;
-            }
-            .grid-block-big_message_sub{
-                @include karla;
-                text-transform: uppercase;
-                font-size: 14px;
-                line-height: 24px;
-                margin-top: 10px;
-            }
+    #who-we-are_grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 70px;
+        margin-bottom: 100px;
+    
+        .who-we-are-grid_column{
+            @include open-sans;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: justify;
         }
     }
-}
-@media (max-width: $max-for-tablet){
     #who-we-are-interesting-frame{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        column-gap: 10px;
-
-
+        column-gap: 40px;
+        padding-top: 75px;
+    
+        #grid-block-big_ico-1{
+            background-image: url("../../../../assets/img/icons/grid-block-big_ico-1.png");
+        }
+        #grid-block-big_ico-2{
+            background-image: url("../../../../assets/img/icons/grid-block-big_ico-2.png");
+        }
+        #grid-block-big_ico-3{
+            background-image: url("../../../../assets/img/icons/grid-block-big_ico-3.png");
+        }
+        #grid-block-big_ico-4{
+            background-image: url("../../../../assets/img/icons/grid-block-big_ico-4.png");
+            
+        }
+    
         .grid-block-big{
-
+    
             .grid-block-big_ico{
                 float: left;
                 align-content: middle;
-                width: 30px;
-                margin-right: 20px;
+                width: 40px;
+                height: 40px;
+                margin-right: 27px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
             }
             .grid-block-big_message{
                 overflow: hidden;
     
                 .grid-block-big_message_main{
                     @include karla;
-                    font-size: 40px;
+                    font-size: 60px;
                     line-height: 40px;
                 }
                 .grid-block-big_message_sub{
                     @include karla;
                     text-transform: uppercase;
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 24px;
                     margin-top: 10px;
                 }
@@ -95,47 +65,88 @@
         }
     }
 }
-@media (max-width: $max-for-mobile){
-    #who-we-are_grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 40px;
-    }
 
-    #who-we-are-interesting-frame{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 50px;
-        justify-content: center;
-        padding-top: 0px;
-
-        .grid-block-big{
-            position: relative;
-
-            .grid-block-big_ico{
-                align-content: middle;
-                display: block;
-                float: none;
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            .grid-block-big_message{
-                margin-top: 50px;
-
-                .grid-block-big_message_main{
-                    @include karla;
-                    font-size: 40px;
-                    line-height: 40px;
-                    text-align: center;
+@media (max-width: $max-for-tablet){
+    #who-we-are{
+        #who-we-are-interesting-frame{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 10px;
+    
+    
+            .grid-block-big{
+    
+                .grid-block-big_ico{
+                    float: left;
+                    align-content: middle;
+                    width: 30px;
+                    margin-right: 20px;
                 }
-                .grid-block-big_message_sub{
-                    @include karla;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    line-height: 24px;
-                    margin-top: 5px;
-                    text-align: center;
+                .grid-block-big_message{
+                    overflow: hidden;
+        
+                    .grid-block-big_message_main{
+                        @include karla;
+                        font-size: 40px;
+                        line-height: 40px;
+                    }
+                    .grid-block-big_message_sub{
+                        @include karla;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        line-height: 24px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: $max-for-mobile){
+    #who-we-are{    
+        padding-bottom: $block-padding;
+
+        #who-we-are_grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
+
+        #who-we-are-interesting-frame{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 50px;
+            justify-content: center;
+            padding-top: 0px;
+
+            .grid-block-big{
+                position: relative;
+
+                .grid-block-big_ico{
+                    align-content: middle;
+                    display: block;
+                    float: none;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                .grid-block-big_message{
+                    margin-top: 50px;
+
+                    .grid-block-big_message_main{
+                        @include karla;
+                        font-size: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                    }
+                    .grid-block-big_message_sub{
+                        @include karla;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        line-height: 24px;
+                        margin-top: 5px;
+                        text-align: center;
+                    }
                 }
             }
         }

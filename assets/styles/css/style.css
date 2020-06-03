@@ -576,38 +576,40 @@ a {
     justify-content: center;
   }
 }
-#who-we-are_grid {
+#who-we-are {
+  padding-bottom: 10px;
+}
+#who-we-are #who-we-are_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 70px;
   margin-bottom: 100px;
 }
-#who-we-are_grid .who-we-are-grid_column {
+#who-we-are #who-we-are_grid .who-we-are-grid_column {
   font-family: "Open Sans Regular", sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-align: justify;
 }
-
-#who-we-are-interesting-frame {
+#who-we-are #who-we-are-interesting-frame {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
   padding-top: 75px;
 }
-#who-we-are-interesting-frame #grid-block-big_ico-1 {
+#who-we-are #who-we-are-interesting-frame #grid-block-big_ico-1 {
   background-image: url("../../../../assets/img/icons/grid-block-big_ico-1.png");
 }
-#who-we-are-interesting-frame #grid-block-big_ico-2 {
+#who-we-are #who-we-are-interesting-frame #grid-block-big_ico-2 {
   background-image: url("../../../../assets/img/icons/grid-block-big_ico-2.png");
 }
-#who-we-are-interesting-frame #grid-block-big_ico-3 {
+#who-we-are #who-we-are-interesting-frame #grid-block-big_ico-3 {
   background-image: url("../../../../assets/img/icons/grid-block-big_ico-3.png");
 }
-#who-we-are-interesting-frame #grid-block-big_ico-4 {
+#who-we-are #who-we-are-interesting-frame #grid-block-big_ico-4 {
   background-image: url("../../../../assets/img/icons/grid-block-big_ico-4.png");
 }
-#who-we-are-interesting-frame .grid-block-big .grid-block-big_ico {
+#who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_ico {
   float: left;
   align-content: middle;
   width: 40px;
@@ -617,15 +619,15 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-#who-we-are-interesting-frame .grid-block-big .grid-block-big_message {
+#who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_message {
   overflow: hidden;
 }
-#who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_main {
+#who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_main {
   font-family: "Karla Regular", sans-serif;
   font-size: 60px;
   line-height: 40px;
 }
-#who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_sub {
+#who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_sub {
   font-family: "Karla Regular", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -634,26 +636,26 @@ a {
 }
 
 @media (max-width: 1023px) {
-  #who-we-are-interesting-frame {
+  #who-we-are #who-we-are-interesting-frame {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
   }
-  #who-we-are-interesting-frame .grid-block-big .grid-block-big_ico {
+  #who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_ico {
     float: left;
     align-content: middle;
     width: 30px;
     margin-right: 20px;
   }
-  #who-we-are-interesting-frame .grid-block-big .grid-block-big_message {
+  #who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_message {
     overflow: hidden;
   }
-  #who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_main {
+  #who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_main {
     font-family: "Karla Regular", sans-serif;
     font-size: 40px;
     line-height: 40px;
   }
-  #who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_sub {
+  #who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_sub {
     font-family: "Karla Regular", sans-serif;
     text-transform: uppercase;
     font-size: 12px;
@@ -662,23 +664,25 @@ a {
   }
 }
 @media (max-width: 767px) {
-  #who-we-are_grid {
+  #who-we-are {
+    padding-bottom: 90px;
+  }
+  #who-we-are #who-we-are_grid {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 40px;
   }
-
-  #who-we-are-interesting-frame {
+  #who-we-are #who-we-are-interesting-frame {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
     justify-content: center;
     padding-top: 0px;
   }
-  #who-we-are-interesting-frame .grid-block-big {
+  #who-we-are #who-we-are-interesting-frame .grid-block-big {
     position: relative;
   }
-  #who-we-are-interesting-frame .grid-block-big .grid-block-big_ico {
+  #who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_ico {
     align-content: middle;
     display: block;
     float: none;
@@ -686,16 +690,16 @@ a {
     left: 50%;
     transform: translateX(-50%);
   }
-  #who-we-are-interesting-frame .grid-block-big .grid-block-big_message {
+  #who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_message {
     margin-top: 50px;
   }
-  #who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_main {
+  #who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_main {
     font-family: "Karla Regular", sans-serif;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
   }
-  #who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_sub {
+  #who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_message .grid-block-big_message_sub {
     font-family: "Karla Regular", sans-serif;
     text-transform: uppercase;
     font-size: 12px;
