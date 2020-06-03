@@ -105,6 +105,10 @@ a {
   color: #55595f;
 }
 
+.gray-block {
+  background-color: #e5eef0;
+}
+
 .block {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -478,9 +482,6 @@ a {
   #make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column .make-your-own-landing_right-column_line {
     margin-bottom: 20px;
   }
-}
-#features {
-  background-color: #e5eef0;
 }
 #features #features_container {
   position: relative;
