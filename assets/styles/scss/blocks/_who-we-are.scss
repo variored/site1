@@ -65,3 +65,9 @@
         }
     }
 }
+@media (max-width: $max-for-tablet){
+    #who-we-are-interesting-frame{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
