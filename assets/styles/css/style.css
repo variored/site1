@@ -708,3 +708,57 @@ a {
     text-align: center;
   }
 }
+#our-projects #our-projects_container #our-projects_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+#our-projects #our-projects_container #our-projects_grid .our-projects_grid-object {
+  border: 1px solid #e4e9ed;
+  transition: 0.4s;
+  height: 264px;
+  background-image: url("../../../../assets/img/projects/1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#our-projects #our-projects_container #our-projects_grid .our-projects_grid-object:hover .our-projects_grid-object_text {
+  display: block;
+}
+#our-projects #our-projects_container #our-projects_grid .our-projects_grid-object:hover {
+  box-shadow: 0 0 10px #e4e9ed;
+  transition: 0.4s;
+}
+#our-projects #our-projects_container #our-projects_grid .our-projects_grid-object:hover .our-projects_grid-object_bg {
+  background-color: rgba(244, 244, 244, 0.8);
+  transition: 0.4s;
+}
+#our-projects #our-projects_container #our-projects_grid .our-projects_grid-object .our-projects_grid-object_bg {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+#our-projects #our-projects_container #our-projects_grid .our-projects_grid-object .our-projects_grid-object_text {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#our-projects #our-projects_container #our-projects_grid .our-projects_grid-object .our-projects_grid-object_text .our-projects_grid-object_title {
+  font-family: "Karla Regular", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #23282f;
+  font-size: 18px;
+}
+#our-projects #our-projects_container #our-projects_grid .our-projects_grid-object .our-projects_grid-object_text .our-projects_grid-object_ico {
+  width: 13px;
+  height: 13px;
+  background-image: url("../../../../assets/img/icons/our-projects_grid-object_ico.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px auto;
+}
