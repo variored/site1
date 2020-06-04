@@ -34,3 +34,40 @@
         }
     }
 }
+@media (max-width: $max-for_tablet){
+    #our-clients{
+        #our-clients_container{
+    
+            #our-clients_grid{
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                row-gap: 20px;
+                column-gap: 30px;
+            }
+        }
+    }
+}
+@media (max-width: $max-for_mobile){
+    #our-clients{
+        #our-clients_container{
+    
+            #our-clients_grid{
+                display: block;
+
+                .our-client_object{
+                    margin: 2px;
+                    display: inline-block;
+                    height: 68px;
+
+                    >img{
+                    }
+
+                    .clients-title{
+                        display: none;
+                    }
+                }
+
+            }
+        }
+    }
+}
