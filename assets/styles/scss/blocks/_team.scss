@@ -1,0 +1,64 @@
+#team_grid{
+    display: grid;
+    grid-template-columns: repeat(1, 263px);
+    justify-content: center;
+    align-content: center;
+    
+    #team_variored{
+        .team_object_photo{
+            background-image: url("../../../../assets/img/team/variored.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .team_grid_object{
+        background-color: #fff;
+    
+        .team_object_photo{
+            background-color: #fff;
+            width: 263px;
+            height: 276px;
+            border-bottom: 1px solid #a6a8a8;
+        }
+
+        .team_object_personal{
+            margin: auto 30px;
+
+            .team_object_personal-info{
+                @include karla;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-top: 30px;
+                margin-bottom: 4px;
+                color: $light-blue_font_hover;
+            }
+    
+            .team_object_personal-post{
+                @include karla;
+                font-size: 14px;
+                margin-bottom: 14px;
+                color: $orange;
+            }
+
+            .team_object_links{
+                margin-bottom: 30px;
+
+                .team_link{
+                    display: inline-block;
+
+                    &:hover >img{
+                        filter: brightness(0.8);
+                    }
+
+                    >img{
+                        //border: 1px solid red;
+                        height: 14px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
