@@ -38,7 +38,13 @@ a{
 .to-center{
     position: relative;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%);
+}
+.to-center-vertical{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 //GRID

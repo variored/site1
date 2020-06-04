@@ -1,0 +1,36 @@
+#our-clients{
+    #our-clients_container{
+
+        #our-clients_grid{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            row-gap: 80px;
+            column-gap: 90px;
+
+            .our-client_object{
+                position: relative;
+
+                &:hover .clients-title{
+                    color: $light-blue_font_hover;
+                }
+                
+                >img{
+                    display: block;
+                    margin-bottom: 70px;
+                }
+                
+                .clients-title{
+                    position: absolute;
+                    text-align: center;
+                    bottom: 0px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: $white-gray;
+                    @include raleway-regular;
+                    font-size: 14px;
+                }
+                
+            }
+        }
+    }
+}

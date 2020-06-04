@@ -6,7 +6,7 @@ $SPEED-ANIM-PROJECTS: 0.4s;
         #our-projects_grid{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 35px;
+            gap: 60px;
 
             .our-projects_grid-object{
                 border: 1px solid $light-frame;
