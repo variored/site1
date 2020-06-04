@@ -75,6 +75,20 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.social_links {
+  margin-bottom: 30px;
+}
+.social_links .social_links_link {
+  display: inline-block;
+}
+.social_links .social_links_link:hover > img {
+  filter: brightness(0.8);
+}
+.social_links .social_links_link > img {
+  height: 14px;
+  margin-right: 8px;
+}
+
 .container {
   width: 970px;
   height: 100%;
@@ -801,16 +815,65 @@ a {
   margin-bottom: 14px;
   color: #f7941d;
 }
-#team_grid .team_grid_object .team_object_personal .team_object_links {
+
+#footer #footer_container {
+  border-top: 1px solid #e4e9ed;
+  border-bottom: 1px solid #e4e9ed;
+  padding: 90px 0px;
+}
+#footer #footer_container #footer_grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+}
+#footer #footer_container #footer_grid #footer_column-gird-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#footer #footer_container #footer_grid #footer_column-gird-menu > a:hover {
+  filter: brightness(0.6);
+}
+#footer #footer_container #footer_grid .footer_column_line-header {
   margin-bottom: 30px;
+  font-family: "Raleway Medium", sans-serif;
+  font-size: 18px;
+  color: #23282f;
 }
-#team_grid .team_grid_object .team_object_personal .team_object_links .team_link {
-  display: inline-block;
+#footer #footer_container #footer_grid .footer_column_line-header::first-letter {
+  text-transform: uppercase;
 }
-#team_grid .team_grid_object .team_object_personal .team_object_links .team_link:hover > img {
-  filter: brightness(0.8);
+#footer #footer_container #footer_grid .footer_grid_column #footer_newsletter_email {
+  height: 36px;
+  line-height: 40px;
+  float: left;
+  border: 1px solid #e4e9ed;
+  color: #93a1a7;
+  font-family: "Karla Regular", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 19px;
 }
-#team_grid .team_grid_object .team_object_personal .team_object_links .team_link > img {
-  height: 14px;
-  margin-right: 8px;
+#footer #footer_container #footer_grid .footer_grid_column #footer_newsletter_submit {
+  height: 40px;
+  width: 42px;
+  border: 0px transparent;
+  float: left;
+  border-radius: 0px;
+}
+#footer #footer_container #footer_grid .footer_grid_column .footer_column_line {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-family: "Karla Regular", sans-serif;
+  font-size: 14px;
+  color: #93a1a7;
+}
+#footer #footer_container #footer_grid .footer_grid_column .footer_column_line .footer_column_line-bold {
+  color: #23282f;
+}
+#footer #footer_copyright {
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Karla Regular", sans-serif;
+  font-size: 14px;
+  color: #93a1a7;
 }

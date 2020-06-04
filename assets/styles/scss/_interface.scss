@@ -46,6 +46,23 @@ a{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.social_links{
+    margin-bottom: 30px;
+
+    .social_links_link{
+        display: inline-block;
+
+        &:hover >img{
+            filter: brightness(0.8);
+        }
+
+        >img{
+            //border: 1px solid red;
+            height: 14px;
+            margin-right: 8px;
+        }
+    }
+}
 
 //GRID
 .container{

@@ -41,24 +41,6 @@
                 margin-bottom: 14px;
                 color: $orange;
             }
-
-            .team_object_links{
-                margin-bottom: 30px;
-
-                .team_link{
-                    display: inline-block;
-
-                    &:hover >img{
-                        filter: brightness(0.8);
-                    }
-
-                    >img{
-                        //border: 1px solid red;
-                        height: 14px;
-                        margin-right: 8px;
-                    }
-                }
-            }
         }
     }
 }
