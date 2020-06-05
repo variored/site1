@@ -833,7 +833,6 @@ a {
   filter: brightness(0.6);
 }
 #footer #footer_container #footer_grid .footer_column_line-header {
-  margin-bottom: 30px;
   font-family: "Raleway Medium", sans-serif;
   font-size: 18px;
   color: #23282f;
@@ -841,7 +840,14 @@ a {
 #footer #footer_container #footer_grid .footer_column_line-header::first-letter {
   text-transform: uppercase;
 }
-#footer #footer_container #footer_grid .footer_grid_column #footer_newsletter_email {
+#footer #footer_container #footer_grid .footer_grid_column .footer_column_sub {
+  padding-top: 30px;
+}
+#footer #footer_container #footer_grid .footer_grid_column #footer_email_form {
+  display: grid;
+  grid-template-columns: max(200px) 42px;
+}
+#footer #footer_container #footer_grid .footer_grid_column #footer_email_form #footer_newsletter_email {
   height: 36px;
   line-height: 40px;
   float: left;
@@ -852,7 +858,7 @@ a {
   text-transform: uppercase;
   padding-left: 19px;
 }
-#footer #footer_container #footer_grid .footer_grid_column #footer_newsletter_submit {
+#footer #footer_container #footer_grid .footer_grid_column #footer_email_form #footer_newsletter_submit {
   height: 40px;
   width: 42px;
   border: 0px transparent;
@@ -876,4 +882,44 @@ a {
   font-family: "Karla Regular", sans-serif;
   font-size: 14px;
   color: #93a1a7;
+}
+
+@media (max-width: 767px) {
+  #footer #footer_container #footer_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #footer #footer_container #footer_grid .footer_grid_column {
+    text-align: center;
+  }
+  #footer #footer_container #footer_grid .footer_grid_column #footer_email_form {
+    display: grid;
+    grid-template-columns: max(200px) 42px;
+    justify-content: center;
+    align-content: center;
+  }
+  #footer #footer_container #footer_grid .footer_grid_column .footer_column_sub {
+    overflow: hidden;
+    height: 0px;
+  }
+  #footer #footer_container #footer_grid .footer_grid_column .footer_columb_sub_opened {
+    overflow: hidden;
+    height: auto;
+  }
+  #footer #footer_container #footer_grid .footer_grid_column #footer_column-gird-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #footer #footer_container #footer_grid .footer_grid_column .footer_column_line-header {
+    background-color: #d5dddf;
+    padding: 10px 0px;
+    transition: 0.4s;
+  }
+  #footer #footer_container #footer_grid .footer_grid_column .footer_column_line-header:hover {
+    filter: brightness(0.9);
+    transition: 0.4s;
+  }
+  #footer #footer_container #footer_grid .footer_grid_column form {
+    display: inline-block;
+  }
 }

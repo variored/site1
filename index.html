@@ -396,7 +396,6 @@
                     <a href="#" class="our-client_object"><img class="to-center-vertical" src="assets/img/icons/clients/clients_discord.png"><div class="clients-title">tweeter</div></a>
                     <a href="#" class="our-client_object"><img class="to-center-vertical" src="assets/img/icons/clients/clients_eye.png"><div class="clients-title">iconfinder</div></a>
                     <a href="#" class="our-client_object"><img class="to-center-vertical" src="assets/img/icons/clients/clients_node.png"><div class="clients-title">nodejs</div></a>
-                    <a href="#" class="our-client_object"><img class="to-center-vertical" src="assets/img/icons/clients/clients_fickr.png"><div class="clients-title">finckr</div></a>
                     <a href="#" class="our-client_object"><img class="to-center-vertical" src="assets/img/icons/clients/clients_quora.png"><div class="clients-title">wepay</div></a>
                     <a href="#" class="our-client_object"><img class="to-center-vertical" src="assets/img/icons/clients/clients_skype.png"><div class="clients-title">skype</div></a>
                     <a href="#" class="our-client_object"><img class="to-center-vertical" src="assets/img/icons/clients/clients_snapchat.png"><div class="clients-title">snapchat</div></a>
@@ -449,9 +448,9 @@
                 <div id="footer_grid"><!--GRID 3-->
 
                     <div class="footer_grid_column">
-                        <div class="footer_column_line-header">menu</div>
+                        <div id="footer_header_menu" class="footer_column_line-header">menu</div>
 
-                        <div id="footer_column-gird-menu"><!--GRID 2-->
+                        <div id="footer_column-gird-menu" class="footer_column_sub"><!--GRID 2-->
                             <a href="#" class="footer_column_line">home</a>
                             <a href="#" class="footer_column_line">about us</a>
                             <a href="#" class="footer_column_line">features</a>
@@ -468,19 +467,28 @@
                     </div>
 
                     <div class="footer_grid_column">
-                        <div class="footer_column_line-header">contact</div>
-                        <div href="#" class="footer_column_line"><span class="footer_column_line-bold">address: </span>some location</div>
-                        <div href="#" class="footer_column_line"><span class="footer_column_line-bold">phone: </span>some phone</div>
-                        <div href="#" class="footer_column_line"><span class="footer_column_line-bold">email: </span>some email</div>
+                        <div id="footer_header_contact" class="footer_column_line-header">contact</div>
+
+                        <div id="footer_column-gird-contact" class="footer_column_sub">
+                            <div href="#" class="footer_column_line"><span class="footer_column_line-bold">address: </span>some location</div>
+                            <div href="#" class="footer_column_line"><span class="footer_column_line-bold">phone: </span>some phone</div>
+                            <div href="#" class="footer_column_line"><span class="footer_column_line-bold">email: </span>some email</div>
+                        </div>
                     </div>
 
                     <div class="footer_grid_column">
-                        <div class="footer_column_line-header">newsletter</div>
-                        <div href="#" class="footer_column_line">sing up your newletter</div>
-                        <form type="post">
-                            <input id="footer_newsletter_email" type="email" name="email" placeholder="email address">
-                            <input id="footer_newsletter_submit" class="blue-button" type="button" name="newsletter_submit" value="GO">
-                        </form>
+                        
+                        <div id="footer_header_newsletter" class="footer_column_line-header">newsletter</div>
+
+                        <div id="footer_column-gird-newsletter" class="footer_column_sub">
+
+                            <div href="#" class="footer_column_line">sing up your newletter</div>
+                            
+                            <form id="footer_email_form" type="post">
+                                <input id="footer_newsletter_email" type="email" name="email" placeholder="email address">
+                                <input id="footer_newsletter_submit" class="blue-button" type="button" name="newsletter_submit" value="GO">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -503,7 +511,11 @@
         -->
         
     </body>
+    
     <script type="text/javascript" src="assets/js/nav-button.js"></script>
-    <script type="text/javascript" src="assets/js/sile-line.js"></script>
+    <!--
+        <script type="text/javascript" src="assets/js/sile-line.js"></script>
+    -->
+    <script type="text/javascript" src="assets/js/footer-mobile.js"></script>
         
 </html>
