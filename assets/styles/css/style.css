@@ -54,7 +54,7 @@ a {
   position: absolute;
   right: 0px;
   bottom: -90px;
-  background-image: url("../../../assets/img/bg/truangles.png");
+  background-image: url("/assets/img/bg/truangles.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,7 +294,7 @@ a {
   background-color: #fff;
 }
 .nav #nav_container #nav_logo {
-  background-image: url("../../../../assets/img/icons/nav-logo.png");
+  background-image: url("/assets/img/icons/nav-logo.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 39px;
@@ -350,7 +350,7 @@ a {
 }
 #hero {
   height: 750px;
-  background-image: url("../../../../assets/img/bg/hero-bg.jpeg");
+  background-image: url("/assets/img/bg/hero-bg.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -430,7 +430,7 @@ a {
   margin-top: 60px;
   width: 585px;
   height: 301px;
-  background-image: url("../../../../assets/img/bg/make-your-own-landing_container_left-column_image_bg.jpg");
+  background-image: url("/assets/img/bg/make-your-own-landing_container_left-column_image_bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -440,28 +440,28 @@ a {
   grid-template-columns: 1fr;
 }
 #make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column #make-your-own-landing_right-column_icon_first {
-  background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_first.png");
+  background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_first.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 #make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column #make-your-own-landing_right-column_icon_first:hover {
-  background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_first_hover.png");
+  background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_first_hover.png");
 }
 #make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column #make-your-own-landing_right-column_icon_second {
-  background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_second.png");
+  background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_second.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 #make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column #make-your-own-landing_right-column_icon_second:hover {
-  background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_second_hover.png");
+  background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_second_hover.png");
 }
 #make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column #make-your-own-landing_right-column_icon_third {
-  background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_third.png");
+  background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_third.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 #make-your-own-landing #make-your-own-landing_container #make-your-own-landing_right-column #make-your-own-landing_right-column_icon_third:hover {
-  background-image: url("../../../../assets/img/icons/make-your-own-landing_right-column_icon_third_hover.png");
+  background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_third_hover.png");
 }
 
 @media (max-width: 1023px) {
@@ -514,12 +514,12 @@ a {
   grid-template-columns: repeat(3, 1fr);
 }
 #features #features_container #features_grid .lorem-ico {
-  background-image: url("../../../../assets/img/icons/lorem_ico.png");
+  background-image: url("/assets/img/icons/lorem_ico.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 #features #features_container #features_grid .lorem-ico:hover {
-  background-image: url("../../../../assets/img/icons/lorem_ico_hover.png");
+  background-image: url("/assets/img/icons/lorem_ico_hover.png");
 }
 
 @media (max-width: 1023px) {
@@ -619,16 +619,16 @@ a {
   padding-top: 75px;
 }
 #who-we-are #who-we-are-interesting-frame #grid-block-big_ico-1 {
-  background-image: url("../../../../assets/img/icons/grid-block-big_ico-1.png");
+  background-image: url("/assets/img/icons/grid-block-big_ico-1.png");
 }
 #who-we-are #who-we-are-interesting-frame #grid-block-big_ico-2 {
-  background-image: url("../../../../assets/img/icons/grid-block-big_ico-2.png");
+  background-image: url("/assets/img/icons/grid-block-big_ico-2.png");
 }
 #who-we-are #who-we-are-interesting-frame #grid-block-big_ico-3 {
-  background-image: url("../../../../assets/img/icons/grid-block-big_ico-3.png");
+  background-image: url("/assets/img/icons/grid-block-big_ico-3.png");
 }
 #who-we-are #who-we-are-interesting-frame #grid-block-big_ico-4 {
-  background-image: url("../../../../assets/img/icons/grid-block-big_ico-4.png");
+  background-image: url("/assets/img/icons/grid-block-big_ico-4.png");
 }
 #who-we-are #who-we-are-interesting-frame .grid-block-big .grid-block-big_ico {
   float: left;
@@ -784,7 +784,7 @@ a {
   align-content: center;
 }
 #team_grid #team_variored .team_object_photo {
-  background-image: url("../../../../assets/img/team/variored.jpg");
+  background-image: url("/assets/img/team/variored.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
