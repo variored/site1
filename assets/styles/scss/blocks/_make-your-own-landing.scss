@@ -32,7 +32,7 @@
                 margin-top: 60px;
                 width: 585px;
                 height: 301px;
-                background-image: url("/assets/img/bg/make-your-own-landing_container_left-column_image_bg.jpg");
+                background-image: url("assets/img/bg/make-your-own-landing_container_left-column_image_bg.jpg");
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -43,30 +43,30 @@
             grid-template-columns: 1fr;
 
             #make-your-own-landing_right-column_icon_first{
-                background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_first.png");
+                background-image: url("assets/img/icons/make-your-own-landing_right-column_icon_first.png");
                 background-position: center;
                 background-repeat: no-repeat;
 
                 &:hover{
-                    background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_first_hover.png");
+                    background-image: url("assets/img/icons/make-your-own-landing_right-column_icon_first_hover.png");
                 }
             }
             #make-your-own-landing_right-column_icon_second{
-                background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_second.png");
+                background-image: url("assets/img/icons/make-your-own-landing_right-column_icon_second.png");
                 background-position: center;
                 background-repeat: no-repeat;
 
                 &:hover{
-                    background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_second_hover.png");
+                    background-image: url("assets/img/icons/make-your-own-landing_right-column_icon_second_hover.png");
                 }
             }
             #make-your-own-landing_right-column_icon_third{
-                background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_third.png");
+                background-image: url("assets/img/icons/make-your-own-landing_right-column_icon_third.png");
                 background-position: center;
                 background-repeat: no-repeat;
 
                 &:hover{
-                    background-image: url("/assets/img/icons/make-your-own-landing_right-column_icon_third_hover.png");
+                    background-image: url("assets/img/icons/make-your-own-landing_right-column_icon_third_hover.png");
                 }
             }
 

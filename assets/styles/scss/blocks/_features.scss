@@ -9,12 +9,12 @@
             grid-template-columns: repeat(3, 1fr);
 
             .lorem-ico{
-                background-image: url("/assets/img/icons/lorem_ico.png");
+                background-image: url("assets/img/icons/lorem_ico.png");
                 background-position: center;
                 background-repeat: no-repeat;
                 
                 &:hover{
-                    background-image: url("/assets/img/icons/lorem_ico_hover.png");
+                    background-image: url("assets/img/icons/lorem_ico_hover.png");
                 }
             }
         }
