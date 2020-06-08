@@ -188,7 +188,7 @@ a {
 @media (max-width: 767px) {
   .container {
     width: 95%;
-    padding: 0 10px;
+    padding: 0 0px;
   }
 }
 #header {
@@ -240,7 +240,7 @@ a {
     border-left: 1px solid #93a1a7;
     opacity: 0.5;
     width: 70px;
-    margin-left: 20px;
+    margin-left: 15px;
     position: relative;
   }
   #header #header_container #header_nav-button:hover {
@@ -345,10 +345,12 @@ a {
     position: fixed;
     transition: 0.4s;
     height: auto;
-    width: 100%;
+    width: 100vw;
+    margin: 0px;
     transform: translateY(-300%);
   }
   .nav #nav_container {
+    padding: 0px 10px;
     height: auto;
     display: grid;
     grid-template-columns: 30%;
@@ -988,4 +990,28 @@ a {
 
 .visible {
   display: block;
+}
+
+@media (max-width: 767px) {
+  #contact-us {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+  }
+  #contact-us #contact-us_title {
+    margin-top: 3px;
+  }
+  #contact-us #contact-us_close {
+    top: 50px;
+  }
+  #contact-us #contact-us_container #contact-us_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px 0px;
+    padding: 15px 0px;
+  }
+  #contact-us #contact-us_container #contact-us_grid #contact-us_grid_comment {
+    grid-column: 1/2;
+    height: 100px;
+  }
 }

@@ -63,10 +63,12 @@ $SPEED_OF_ANIM_NAV: 0.4s;
         position: fixed;
         transition: $SPEED_OF_ANIM_NAV;
         height: auto;
-        width: 100%;
+        width: 100vw;
+        margin: 0px;
         transform: translateY(-300%);
 
         #nav_container{
+            padding: 0px 10px;
             height: auto;
             display: grid;
             grid-template-columns: 30%;

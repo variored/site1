@@ -64,3 +64,33 @@
 .visible{
     display: block;
 }
+@media (max-width: $max-for_mobile){
+    #contact-us{
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+
+        #contact-us_title{
+            margin-top: 3px;
+        }
+
+        #contact-us_close{
+            top: 50px;
+        }
+
+        #contact-us_container{
+    
+            #contact-us_grid{
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 30px 0px;
+                padding: 15px 0px;
+
+                #contact-us_grid_comment{
+                    grid-column: 1/2;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}

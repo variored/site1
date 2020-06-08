@@ -13,10 +13,14 @@ function ContactClicked(){
     if (contact_us.classList.contains("visible")){
         contact_us.classList.remove("visible");
         contact_us_empty_space.classList.remove("visible");
+        document.body.style.overflow = "scroll";
     }
     else{
         contact_us.classList.add("visible");
         contact_us_empty_space.classList.add("visible");
+        window.scroll(0,0);
+        document.body.style.overflow = "hidden";
+
     }
 }
 function keyPressed(e){
@@ -25,6 +29,5 @@ function keyPressed(e){
         if (contact_us.classList.contains("visible")){
             ContactClicked();
         }
-        
     }
 }
