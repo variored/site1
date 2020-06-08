@@ -58,11 +58,37 @@
                 <a href="#our-clients" class="nav_link">clients</a>
                 <a href="#team" class="nav_link">team</a>
                 <a href="#locate" class="nav_link">locate</a>
-                <button class="blue-button">contact us</a>
+                <button id="nav_menu_contact-us" class="blue-button">contact us</a>
             </div>            
 
             <div id="nav_empty-space"></div>
         </nav>
+        
+        <div id="contact-us" class="invisible">
+
+            <div id="contact-us_container" class="container">
+
+            <button id="contact-us_close" class="blue-button">X</button>
+
+            <div id="contact-us_title">contact us</div>
+
+                <form type="post">
+                    
+                    <div id="contact-us_grid">
+                        <input class="input_text input_text-blue" type="text" name="name" placeholder="name">
+                        <input class="input_text input_text-blue" type="email" name="email" placeholder="email">
+                        <input class="input_text input_text-blue" type="text" name="phone" placeholder="phone">
+                        <input class="input_text input_text-blue" type="text" name="site" placeholder="website">
+                        <textarea id="contact-us_grid_comment" class="input_text-blue" name="comment" placeholder="comment"></textarea>
+                    </div>
+
+                </form>
+
+                    <input class="blue-button to-center" type="submit" name="submit" value="submit">
+                </form>
+            </div>
+        </div>
+        <div id="contact-us_empty-space" class="invisible"></div>
 
         <!--HERO-->
         <div id="hero">
@@ -427,7 +453,7 @@
                             <div href="#" class="footer_column_line">sing up your newletter</div>
                             
                             <form id="footer_email_form" type="post">
-                                <input id="footer_newsletter_email" type="email" name="email" placeholder="email address">
+                                <input class="input_text" type="email" name="email" placeholder="email address">
                                 <input id="footer_newsletter_submit" class="blue-button" type="button" name="newsletter_submit" value="GO">
                             </form>
                         </div>
@@ -441,5 +467,6 @@
     
     <script type="text/javascript" src="assets/js/nav-button.js"></script>
     <script type="text/javascript" src="assets/js/footer-mobile.js"></script>
+    <script type="text/javascript" src="assets/js/contact_us.js"></script>
         
 </html>

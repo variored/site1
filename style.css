@@ -62,6 +62,23 @@ a {
   height: 109px;
 }
 
+.input_text {
+  height: 36px;
+  line-height: 40px;
+  float: left;
+  border: 1px solid #e4e9ed;
+  color: #93a1a7;
+  font-family: "Karla Regular", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 19px;
+}
+
+.input_text-blue {
+  background-color: #e5eef0;
+  color: #23282f;
+}
+
 .to-center {
   position: relative;
   left: 50%;
@@ -847,17 +864,6 @@ a {
   display: grid;
   grid-template-columns: max(200px) 42px;
 }
-#footer #footer_container #footer_grid .footer_grid_column #footer_email_form #footer_newsletter_email {
-  height: 36px;
-  line-height: 40px;
-  float: left;
-  border: 1px solid #e4e9ed;
-  color: #93a1a7;
-  font-family: "Karla Regular", sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
-  padding-left: 19px;
-}
 #footer #footer_container #footer_grid .footer_grid_column #footer_email_form #footer_newsletter_submit {
   height: 40px;
   width: 42px;
@@ -922,4 +928,64 @@ a {
   #footer #footer_container #footer_grid .footer_grid_column form {
     display: inline-block;
   }
+}
+#contact-us_empty-space {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  z-index: 101;
+  position: fixed;
+  top: 0px;
+}
+
+#contact-us {
+  background-color: #FFF;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 102;
+  position: absolute;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border: #e4e9ed;
+}
+#contact-us #contact-us_close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 30px;
+  width: 30px;
+}
+#contact-us #contact-us_container #contact-us_title {
+  text-align: center;
+  font-family: "Raleway Extra Bold", sans-serif;
+  font-size: 25px;
+  color: #23282f;
+  text-transform: uppercase;
+}
+#contact-us #contact-us_container #contact-us_grid {
+  margin: 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 0px 12px;
+}
+#contact-us #contact-us_container #contact-us_grid #contact-us_grid_comment {
+  grid-column: 1/3;
+  height: 100px;
+  resize: none;
+  border: 1px solid #e4e9ed;
+  color: #93a1a7;
+  font-family: "Karla Regular", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 19px;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
 }

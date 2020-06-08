@@ -37,18 +37,6 @@
                     display: grid;
                     grid-template-columns: max(200px) 42px;
 
-                    #footer_newsletter_email{
-                        height: 36px;
-                        line-height: 40px;
-                        float: left;
-                        border: 1px solid $light-frame;
-                        color: $light-blue_font;
-                        @include karla;
-                        font-size: 15px;
-                        text-transform: uppercase;
-                        padding-left: 19px;
-    
-                    }
 
                     #footer_newsletter_submit{
                         height: 40px;

@@ -35,6 +35,21 @@ a{
     width: 212px;
     height: 109px;
 }
+.input_text{
+    height: 36px;
+    line-height: 40px;
+    float: left;
+    border: 1px solid $light-frame;
+    color: $light-blue_font;
+    @include karla;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 19px;
+}
+.input_text-blue{
+    background-color: $light-blue;
+    color: $light-blue_font_hover;
+}
 .to-center{
     position: relative;
     left: 50%;
@@ -57,7 +72,6 @@ a{
         }
 
         >img{
-            //border: 1px solid red;
             height: 14px;
             margin-right: 8px;
         }
