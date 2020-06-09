@@ -994,15 +994,12 @@ a {
 
 @media (max-width: 767px) {
   #contact-us {
-    width: 100vw;
-    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95vw;
     margin: 0px;
-  }
-  #contact-us #contact-us_title {
-    margin-top: 3px;
-  }
-  #contact-us #contact-us_close {
-    top: 50px;
+    border: 1px solid #e4e9ed;
   }
   #contact-us #contact-us_container #contact-us_grid {
     display: grid;
