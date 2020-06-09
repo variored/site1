@@ -1,0 +1,81 @@
+#our-location{
+    #our-location_container{
+        #our-location_map{
+            width: 1013px;
+            height: 417px;
+            border: none;
+        }
+
+        #our-location_grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .our-location_grid_object-frame{
+                margin-top: 75px;
+
+                #our-location_object_ico_phone{
+                    background-image: url("assets/img/icons/our-location_phone.png");
+                } 
+                #our-location_object_ico_location{
+                    background-image: url("assets/img/icons/our-location_location.png");
+                } 
+                #our-location_object_ico_mail{
+                    background-image: url("assets/img/icons/our-location_mail.png");
+                } 
+
+                .our-location_object_ico{
+                    border: 2px solid $blue-button;
+                    border-radius: 50%;
+                    width: 67px;
+                    height: 67px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                .our-location_object_info{
+                    text-align: center;
+                    @include karla;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $max-for-tablet){
+    #our-location{
+        #our-location_container{
+            #our-location_map{
+                width: 716px;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+        }
+    }
+}
+@media (max-width: $max-for-mobile){
+    #our-location{
+        #our-location_container{
+            #our-location_map{
+                width: 95%;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0%);
+            }
+
+            #our-location_grid{
+                margin-top: 75px;
+                display: grid;
+                grid-template-columns: 1fr;
+                padding: 0px 10%;
+                row-gap: 10px;
+
+                .our-location_grid_object-frame{
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
