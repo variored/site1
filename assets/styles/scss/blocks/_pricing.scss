@@ -11,6 +11,8 @@ $SPEED-ANIM-PRICE-FRAME-BOX-SHADOW: 0.3s;
             .pricing_price-frame{
                 border: 1px solid $light-frame;
                 transition: $SPEED-ANIM-PRICE-FRAME-BOX-SHADOW;
+                padding-bottom: 50px;
+                position: relative;
 
                 &:hover{
                     box-shadow: 0 0 10px #e4e9ed;
@@ -44,7 +46,7 @@ $SPEED-ANIM-PRICE-FRAME-BOX-SHADOW: 0.3s;
                 }
 
                 .price-frame_price-description{
-                    padding: 40px 60px;
+                    padding: 40px 20px;
                     @include open-sans;
                     font-size: 15px;
                     color: $white-gray;
@@ -52,6 +54,8 @@ $SPEED-ANIM-PRICE-FRAME-BOX-SHADOW: 0.3s;
 
                 .blue-button{
                     margin-bottom: 40px;
+                    position: absolute;
+                    bottom: -20px;
                 }
             }
         }
