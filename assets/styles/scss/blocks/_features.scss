@@ -8,6 +8,50 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
 
+
+            #feature_ico_1{
+                background-image: url("assets/img/icons/features/features_ico_1.png");
+                
+                &:hover{
+                    background-image: url("assets/img/icons/features/features_ico_1_hover.png");
+                }
+            }
+            #feature_ico_2{
+                background-image: url("assets/img/icons/features/features_ico_2.png");
+                
+                &:hover{
+                    background-image: url("assets/img/icons/features/features_ico_2_hover.png");
+                }
+            }
+            #feature_ico_3{
+                background-image: url("assets/img/icons/features/features_ico_3.png");
+                
+                &:hover{
+                    background-image: url("assets/img/icons/features/features_ico_3_hover.png");
+                }
+            }
+            #feature_ico_4{
+                background-image: url("assets/img/icons/features/features_ico_4.png");
+                
+                &:hover{
+                    background-image: url("assets/img/icons/features/features_ico_4_hover.png");
+                }
+            }
+            #feature_ico_5{
+                background-image: url("assets/img/icons/features/features_ico_5.png");
+                
+                &:hover{
+                    background-image: url("assets/img/icons/features/features_ico_5_hover.png");
+                }
+            }
+            #feature_ico_6{
+                background-image: url("assets/img/icons/features/features_ico_6.png");
+                
+                &:hover{
+                    background-image: url("assets/img/icons/features/features_ico_6_hover.png");
+                }
+            }
+
             .lorem-ico{
                 background-image: url("assets/img/icons/lorem_ico.png");
                 background-position: center;
