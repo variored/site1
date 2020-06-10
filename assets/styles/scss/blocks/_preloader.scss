@@ -1,3 +1,6 @@
+$SPEED_OF_SPINING: 2s;
+$SPEED_OF_TRANSPARENT: 2s;
+
 #preloader{
     width: 100%;
     height: 100%;
@@ -16,16 +19,20 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        animation: 2s spin infinite ease-out;
+        animation: $SPEED_OF_SPINING spin infinite linear;
     }
 }
 .preloader_active{
     opacity: 1;
-    transition: 2s all;
+    display: block;
+    transition: $SPEED_OF_TRANSPARENT all;
 }
 .preloader_done{
     opacity: 0;
-    transition: 2s all;
+    transition: $SPEED_OF_TRANSPARENT all;
+}
+.prealoader_disabled{
+    display: none;
 }
 
 @keyframes spin{

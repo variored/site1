@@ -10,4 +10,8 @@ function Loaded(){
 
 function Show(){
     preloader.classList.add("preloader_done");
+    setTimeout(SetDisabled, 2000);
+}
+function SetDisabled(){
+    preloader.classList.add("prealoader_disabled");
 }
